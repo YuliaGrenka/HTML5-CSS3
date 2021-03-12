@@ -1,3 +1,9 @@
+@font-face {
+    font-family: fontello; /* Имя шрифта */
+    src: url(../fonts/fontello.ttf); /* Путь к файлу со шрифтом */
+   }
+
+
 body {
 	margin: 0;
 	font-family: Arial, sans-serif;
@@ -406,7 +412,6 @@ h2 {
 
 .tarif-item-btn:hover {
 	background-color: #ebebeb;
-	color: ;
 }
   
 .tarif-item-btn:active {
@@ -435,7 +440,7 @@ h2 {
 	flex-grow: 1;
 	width: 100%;
 	text-align: center;
-	margin-bottom: 15px;
+	margin-bottom: 20px;
 }
 
 .footer-button {
@@ -451,15 +456,15 @@ h2 {
 	text-transform: uppercase;
 	background-color: #fff;
 	box-sizing: border-box;
+	cursor: pointer;
 }
 
 .footer-button:hover {
 	background-color: #ebebeb;
-	color: ;
 }
   
 .footer-button:active {
-	background-color: #ccc;
+	background-color: #253130;
 	color: #fff;
 }
 
@@ -562,34 +567,32 @@ textarea[placeholder] {
 }
 
 .footer-social-item:before {
-	font-family: FontAwesome;
+	font-family: fontello;
 	color: #ffffff;
 	margin-right: 10px; 
-	content: "";
 	display: block;
-	width: 24px;
-	height: 25px;
 	box-sizing: border-box;
-	font-size: 30px;
+	font-size: 26px;
 	position: absolute;
 	top: 1px;
 	left: 0;
 }
 
 .footer-social-item:first-child:before {
+	font-family: FontAwesome;
 	content: "\f17e"; 
 }
 
 .footer-social-item:nth-child(2):before {
-	content: "\f069"; 
+	content: "\F304"; 
 }
 
 .footer-social-item:nth-child(3):before {
-	content: "\f1fa"; 
+	content: "\e801"; 
 }
 
 .footer-social-item:nth-child(4):before {
-	content: "\f095"; 
+	content: "\e802"; 
 }
 
 .footer-social-icons-list {
@@ -614,21 +617,102 @@ textarea[placeholder] {
 }
   
 .footer-social-icons-item:before {
-	font-family: FontAwesome;
-	color: #ffffff;
-	margin-right: 10px; 
-	content: "";
-	display: block;
-	width: 24px;
-	height: 25px;
-	box-sizing: border-box;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	position: absolute;
-	top: 1px;
-	left: 0;
+    font-family: fontello;
+    color: #445162;
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    top: 20%;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
 }
+
+.footer-social-icons-item:nth-child(1):before {
+	content: "\f303";
+}
+
+.footer-social-icons-item:nth-child(2):before {
+	content: "\f300";	
+}
+
+.footer-social-icons-item:nth-child(3):before {
+	content: "\f31a";	
+}
+
+.footer-social-icons-item:nth-child(4):before {
+	content: "\e803";	
+}
+
+.footer-social-icons-item:nth-child(5):before {
+	content: "\f167";	
+}
+
+.footer-social-icons-item:nth-child(1):hover {
+	background-color: #ebebeb;
+}
+
+.footer-social-icons-item:nth-child(2):hover {
+
+	background-color: #ebebeb;
+}
+
+.footer-social-icons-item:nth-child(3):hover {
+	background-color: #ebebeb;
+}
+
+.footer-social-icons-item:nth-child(4):hover {
+	background-color: #ebebeb;
+
+}
+
+.footer-social-icons-item:nth-child(5):hover {
+	background-color: #ebebeb;
+}
+
+.footer-social-icons-item:nth-child(1):active {
+	background-color: #253130;
+}
+
+.footer-social-icons-item:nth-child(2):active {
+
+	background-color: #253130;
+}
+
+.footer-social-icons-item:nth-child(3):active {
+	background-color: #253130;
+}
+
+.footer-social-icons-item:nth-child(4):active {
+	background-color: #253130;
+
+}
+
+.footer-social-icons-item:nth-child(5):active {
+	background-color: #253130;
+}
+
+
+.footer-social-icons-item:nth-child(1):active:before {
+	color: #ffffff;
+}
+
+.footer-social-icons-item:nth-child(2):active:before {
+	color: #ffffff;	
+}
+
+.footer-social-icons-item:nth-child(3):active:before {
+	color: #ffffff;	
+}
+
+.footer-social-icons-item:nth-child(4):active:before {
+	color: #ffffff;	
+}
+
+.footer-social-icons-item:nth-child(5):active:before {
+	color: #ffffff;	
+}
+
 
 .footer-copyright {
 	width: 100%;
